@@ -43,7 +43,10 @@ commit() {
   git commit -m "$MESSAGE"
 }
 
-push() { git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD); }
+push() {
+  ARGS=$@
+  git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) $ARGS
+}
 
 pull() {
   if [ $# -eq 0 ]; then
