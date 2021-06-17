@@ -1,6 +1,6 @@
 # Dev Utils
 
-All sorts of cool utilities I came across for development
+All sorts of cool tools I came across for development
 
 - https://worldvectorlogo.com
 - https://freeicons.io
