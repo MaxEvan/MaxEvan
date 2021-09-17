@@ -32,10 +32,7 @@ alias gcb="git checkout -b $1"
 alias gc="git checkout $1"
 alias gb="git branch"
 alias gl="git log"
-
-clonepr() {
-  git fetch origin pull/$1/head:pull-request-$1
-}
+alias grs="git reset --soft HEAD~"
 
 commit() {
   MESSAGE=$@
@@ -58,7 +55,10 @@ pull() {
   git pull --rebase --autostash origin $BRANCH
 }
 
+alias stash="git stash"
+alias pop="git stash pop"
 alias pp="pull && push"
+alias save="commit save"
 # Git ===================== END
 
 # Docker ===================== START
@@ -107,16 +107,28 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-getSystemTheme() {
-  if [[ $(defaults read -g AppleInterfaceStyle 2>/dev/null) == "Dark" ]]; then
-    echo "Dark"
-  else
-    echo "Light"
-  fi
-}
+ANDROID_SDK=/Users/max/Library/Android/sdk
+ANDROID_SDK_ROOT=/Users/max/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools/bin
+export PATH=$PATH:$ANDROID_SDK/platform-tools
 
-setSystemTheme() {
-  echo -e "\033]50;SetProfile="$1"\a"
-}
+# getSystemTheme() {
+#   if [[ $(defaults read -g AppleInterfaceStyle 2>/dev/null) == "Dark" ]]; then
+#     echo "Dark"
+#   else
+#     echo "Light"
+#   fi
+# }
 
-setSystemTheme $(getSystemTheme)
+# setSystemTheme() {
+#   echo -e "\033]50;SetProfile="$1"\a"
+# }
+
+# setSystemTheme $(getSystemTheme)
+
+REACT_EDITOR=/usr/local/bin/code-insiders
+
+# Java related stuff
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+# export PATH="/usr/local/opt/openjdk/bin:$PATH"
