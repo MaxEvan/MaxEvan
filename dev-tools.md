@@ -12,4 +12,5 @@ All sorts of cool tools I came across for development
 - https://svgartista.net/
 - https://retool.com/
 - https://transform.tools/ => transform a lot of stuff to some other formats
-- https://www.mapbox.com/
+- https://www.mapbox.com/ => Map service
+- https://stytch.com/ => Authentication service
