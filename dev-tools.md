@@ -1,16 +1,13 @@
-# Dev Utils
+# Good dev tools/saas
 
-All sorts of cool tools I came across for development
-
-- https://worldvectorlogo.com
-- https://freeicons.io
-- https://csvjson.com
-- https://headlessui.dev
-- https://www.joshwcomeau.com/operator-lookup
-- https://react-svgr.com/playground/
-- https://shapecatcher.com/
-- https://svgartista.net/
-- https://retool.com/
-- https://transform.tools/ => transform a lot of stuff to some other formats
-- https://www.mapbox.com/ => Map service
-- https://stytch.com/ => Authentication service
+- http://worldvectorlogo.com
+- http://freeicons.io
+- http://csvjson.com
+- http://headlessui.dev
+- http://joshwcomeau.com/operator-lookup => JS operator lookup
+- http://react-svgr.com/playground => Convert svg to react components
+- http://retool.com => The fast way to build internal tools
+- http://transform.tools => Transform a lot of stuff to some other formats
+- http://mapbox.com => Map service
+- http://stytch.com => Authentication service
+- http://supabase.com => Open-source alternative to Firebase
